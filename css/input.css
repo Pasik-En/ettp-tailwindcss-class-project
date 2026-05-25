@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme{
+--color-Dark-blue: #0f172a;
+--color-Blue-shade: #152032;
+--color-Light-blue: #3b82f6;
+--color-Purple: #a855f7;
+--color-Green: #22c55e;
+}
+
+.nav-hover {
+    @apply hover:text-white transition duration-300;
+}
+
+.card {
+    @apply bg-blue-300/9 border border-white/5 rounded-2xl p-8 hover:translate-y-2 transition duration-300 text-shadow-white;
+    
+}
+
+.input {
+    @apply bg-blue-300/5 w-full border border-white/5 rounded-xl px-5 py-4 outline-none focus:border-accent;
+}

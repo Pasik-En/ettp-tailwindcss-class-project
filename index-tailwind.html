@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Nexus - Digital Agency</title>
+
+  <!-- Google Font CDN -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Tailwind CSS Link -->
+   <link rel="stylesheet" href="./css/output.css">
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <header class="border-b border-white/10 bg-Dark-blue text-white sticky top-0 z-50">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="flex items-center justify-between h-20">
+
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+        
+          <span class="w-9 h-9 rounded-lg bg-Light-blue flex justify-center items-center">
+            <i class="fa-solid fa-bolt"></i>
+          </span>
+
+          <h1 class="text-lg font-semibold">
+            Nexus
+          </h1>
+        </div>
+
+        <!-- Desktop Navigation -->
+      <nav class="hidden lg:flex flex-1 justify-center">
+
+        <ul class="flex items-center gap-8 text-sm  text-gray-300">
+           <li>
+            <a
+            href="#"
+            class="nav-hover"
+          >
+            Home
+          </a>
+          </li>
+
+          <li>
+            <a
+            href="#services"
+            class="nav-hover"
+          >
+            Services
+          </a>
+          </li>
+
+          <li>
+            <a
+            href="#about"
+            class="nav-hover"
+          >
+            About
+          </a>
+          </li>
+
+          <li>
+            <a
+            href="#contact"
+            class="nav-hover"
+          >
+            Contact
+          </a>
+          </li>
+        </ul>
+        </nav>
+
+        <div class="flex items-center">
+          <a href="#services"class="hidden lg:flex bg-Light-blue hover:bg-Dark-blue transition duration-300 px-5 py-2.5 rounded-lg text-sm font-medium"
+        >
+          Get Started
+          </a>
+        </div>
+
+        <!-- Mobile Icon -->
+        <div class="lg:hidden flex items-center">
+          
+          <button class="text-3xl">
+           <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <!-- Mobile Nav Menu -->
+        <ul class="hidden">
+            <li>
+            <a href="#">Home</a>
+            </li>
+            <li>
+            <a href="#services">Services</a>
+            </li>
+            <li>
+            <a href="#about">About</a>
+            </li>
+            <li>
+            <a href="#contact">Contact</a>
+            </li>
+           <li>
+            <a href="#">
+            Get Started
+            </a>
+            </li>       
+        </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+<!-- Hero Section -->
+  <section class="py-20 lg:py-28 bg-Dark-blue">
+
+    <div
+      class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-14 items-center text-white"
+    >
+
+      <!-- Left Content -->
+      <div>
+
+        <h2
+          class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight"
+        >
+          Build Your
+          <span class="text-Light-blue">Digital</span>
+          Future
+        </h2>
+
+        <p
+          class="mt-6 text-gray-400 text-lg leading-relaxed max-w-xl"
+        >
+          Transform your business with cutting-edge solutions that drive growth
+          and innovation in the digital landscape.
+        </p>
+
+        <!-- Buttons -->
+        <div class="mt-8 flex flex-col sm:flex-row gap-4">
+
+          <button
+            class="bg-Light-blue hover:bg-Green transition duration-300 px-7 py-4 rounded-xl font-medium"
+          >
+            Start Your Journey
+          </button>
+
+          <button
+            class="border border-white/10 hover:bg-white/5 transition duration-300 px-7 py-4 rounded-xl font-medium"
+          >
+            Learn More
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- Right Image -->
+      <div class="relative">
+
+        <div
+          class="absolute inset-0 bg-accent/20 blur-3xl rounded-full"
+        ></div>
+
+        <!-- Image Card -->
+        <div
+          class="relative bg-secondary border border-white/5 rounded-3xl overflow-hidden"
+        >
+
+          <!-- Hero Image -->
+          <img
+            src="./Images/hero-image.png"
+            alt="Hero Dashboard"
+            class="w-full h-full object-cover"
+          />
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+<!--  Services Section -->
+  <section
+    id="services"
+    class="py-20 bg-Blue-shade"
+  >
+
+    <div class="max-w-7xl mx-auto px-6 text-white">
+
+      <!-- Heading -->
+      <div class="text-center">
+
+        <h2 class="text-3xl md:text-4xl font-bold">
+          Our Services
+        </h2>
+
+        <p class="mt-4 text-gray-400 max-w-2xl mx-auto">
+          We provide comprehensive solutions to help your business thrive in
+          the digital age.
+        </p>
+
+      </div>
+
+      <!-- Service Cards -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-14">
+
+        <!-- Card 1 custom utility class-->
+        <div
+          class="card"
+        >
+
+          <div
+            class="w-14 h-14 rounded-xl bg-Blue-shade flex items-center justify-center text-accent text-2xl shadow-none"
+          >
+            <span class="bg-Light-blue p-2 rounded-sm text-sm">
+              <i class="fa-solid fa-code"></i>
+            </span>
+          </div>
+
+          <h3 class="mt-6 text-xl font-semibold">
+            Web Development
+          </h3>
+
+          <p class="mt-4 text-gray-400 leading-relaxed">
+            Custom websites and web applications built with modern technologies
+            for optimal performance.
+          </p>
+
+        </div>
+
+        <!-- Card 2 custom utility class-->
+        <div
+          class="card"
+        >
+
+          <div
+            class="w-14 h-14 rounded-xl bg-green/20 flex items-center justify-center text-green text-2xl"
+          >
+            <span class="bg-Green p-2 text-sm rounded-sm">
+              <i class="fa-solid fa-mobile-screen"></i>
+            </span>
+          </div>
+
+          <h3 class="mt-6 text-xl font-semibold">
+            Mobile Apps
+          </h3>
+
+          <p class="mt-4 text-gray-400 leading-relaxed">
+            Native and cross-platform mobile applications that deliver exceptional
+            user experiences.
+          </p>
+
+        </div>
+
+        <!-- Card 3 custom utility class-->
+        <div
+          class="card"
+        >
+
+          <div
+            class="w-14 h-14 rounded-xl bg-purple/20 flex items-center justify-center text-purple text-2xl"
+          >
+            <span class="bg-Purple p-2 rounded-sm text-sm">
+              <i class="fa-solid fa-chart-line"></i>
+            </span>
+          </div>
+
+          <h3 class="mt-6 text-xl font-semibold">
+            Digital Marketing
+          </h3>
+
+          <p class="mt-4 text-gray-400 leading-relaxed">
+            Strategic marketing campaigns that boost your online presence and drive
+            conversions.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+ <!-- About Section -->
+  <section
+    id="about"
+    class="py-20 bg-Dark-blue text-white"
+  >
+
+    <div
+      class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-14 items-center"
+    >
+
+      <!-- About Image -->
+      <div>
+
+        <img
+          src="./Images/about-image.png"
+          alt="About Team"
+          class="rounded-3xl border border-white/5"
+        />
+
+      </div>
+
+      <!-- Content -->
+      <div>
+
+        <h2 class="text-3xl md:text-4xl font-bold">
+          About Nexus
+        </h2>
+
+        <p class="mt-6 text-gray-400 leading-relaxed">
+          We are a forward-thinking technology company dedicated to helping
+          businesses navigate the digital transformation journey. With years of experience and a passion for innovation, we deliver solutions that matter.
+        </p>
+
+        <div class="grid grid-cols-2 gap-8 mt-10">
+
+          <div>
+
+            <h3 class="text-4xl font-bold text-Light-blue">
+              150+
+            </h3>
+
+            <p class="text-gray-400 mt-2">
+              Projects Completed
+            </p>
+
+          </div>
+
+          <div>
+
+            <h3 class="text-4xl font-bold text-Green">
+              98%
+            </h3>
+
+            <p class="text-gray-400 mt-2">
+              Client Satisfaction
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+<!-- Contact Section -->
+  <section
+    id="contact"
+    class="py-20 bg-Blue-shade text-white"
+  >
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Heading -->
+      <div class="text-center">
+
+        <h2 class="text-3xl md:text-4xl font-bold">
+          Get In Touch
+        </h2>
+
+        <p class="mt-4 text-gray-400 max-w-2xl mx-auto">
+          Ready to start your project? Let's discuss how we can help you
+          achieve your goals.
+        </p>
+
+      </div>
+
+      <!-- Contact Box -->
+      <div
+        class="mt-14 grid lg:grid-cols-2 gap-10 text-white bg-Blue-shade/10 border border-white/5 rounded-3xl p-8 lg:p-12"
+      >
+
+        <!-- Contact Info -->
+        <div class="space-y-8">
+
+          <!-- Email -->
+          <div class="flex items-center">
+
+            <div
+              class="w-12 h-12 rounded-xl bg-accent/20 flex items-center justify-center text-accent"
+            >
+             <span class="text-Light-blue">
+               <i class="fa-regular fa-envelope"></i>
+             </span>
+            </div>
+
+            <div>
+
+              <h4 class="font-medium">
+                hello@nexus.com
+              </h4>
+
+            </div>
+
+          </div>
+
+          <!-- Phone -->
+          <div class="flex items-center-safe">
+
+            <div
+              class="w-12 h-12 rounded-xl bg-green/20 flex items-center justify-center text-green"
+            >
+              <span class="text-Light-blue">
+                <i class="fa-solid fa-phone"></i>
+              </span>
+            </div>
+
+            <div>
+
+              <h4 class="font-medium">
+                +1(555) 123-4567
+              </h4>
+
+            </div>
+
+          </div>
+
+          <!-- Address -->
+          <div class="flex items-center">
+
+            <div
+              class="w-12 h-12 rounded-xl bg-purple/20 flex items-center justify-center text-purple"
+            >
+              <span class="text-Light-blue">
+                <i class="fa-solid fa-location-dot"></i>
+              </span>
+            </div>
+
+            <div>
+
+              <h4 class="font-medium">
+                123 Business Ave, Tech City
+              </h4>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Contact Form -->
+        <form class="space-y-5">
+
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="w-full bg-blue-300/9 border border-white/5 rounded-xl px-5 py-4 outline-none focus:border-accent"
+          />
+
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="w-full bg-blue-300/9 border border-white/5 rounded-xl px-5 py-4 outline-none focus:border-accent"
+          />
+
+          <textarea
+            rows="5"
+            placeholder="Your Message"
+            class="w-full bg-blue-300/9 border border-white/5 rounded-xl px-5 py-4 outline-none focus:border-accent resize-none"
+          ></textarea>
+
+          <button
+            type="submit"
+            class="w-full bg-Light-blue hover:bg-Green transition duration-300 py-4 rounded-xl font-semibold"
+          >
+            Send Message
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+<!-- Footer -->
+  <footer class="border-t border-white/10 bg-Dark-blue/90">
+
+    <div
+      class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-5"
+    >
+
+      <!-- Logo -->
+      <div class="flex items-center gap-2">
+
+        <div
+          class="w-9 h-9 rounded-lg bg-Light-blue flex items-center justify-center font-bold text-white"
+        >
+          <i class="fa-solid fa-bolt"></i>
+        </div>
+
+        <span class="font-semibold text-white">
+          Nexus
+        </span>
+
+      </div>
+
+      <!-- Copyright -->
+      <p class="text-gray-500 text-sm text-center">
+        &copy; 2024 Nexus. All rights reserved.
+      </p>
+
+      <!-- Social -->
+      <div class="flex items-center gap-5 text-gray-400">
+
+        <a href="#" class="hover:text-white transition">
+          <span>
+            <i class="fa-brands fa-twitter"></i>
+          </span>
+        </a>
+
+        <a href="#" class="hover:text-white transition">
+          <span>
+            <i class="fa-brands fa-linkedin"></i>
+          </span>
+        </a>
+
+        <a href="#" class="hover:text-white transition">
+         <span>
+          <i class="fa-brands fa-github"></i>
+         </span>
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
